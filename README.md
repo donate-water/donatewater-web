@@ -94,6 +94,17 @@ You can easily configure Next js Boilerplate by making a search in the whole pro
 
 You have access to the whole code source if you need further customization.
 
+### Deployment
+
+This repository contains a docker file which can be used to build a image with following command
+
+``
+docker build . --no-cache -t donetwater-web:v1
+``
+The built image can be pushed to any container registry and deployed in Kuberneties or docker swarm environment
+The deployment need the API url as input to be placed in https://github.com/donate-water/donatewater-web/blob/main/.env.local file 
+Also fill all the other parameters like clientID, clientSecret obtained from backend deploment
+
 ### Contributions
 
 Everyone is welcome to contribute to this project. Feel free to open an issue if you have question or found a bug. Totally open to any suggestions and improvements.
